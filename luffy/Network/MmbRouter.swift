@@ -25,7 +25,9 @@ enum MmbRouter {
 
 extension MmbRouter: URLRequestConvertible {
   
-  static let baseURL = "https://apapia-history.manmanbuy.com"
+  var baseURLString: String {
+    return "https://apapia-history.manmanbuy.com"
+  }
   
   var headers: [String: String] {
     return [
@@ -47,7 +49,7 @@ extension MmbRouter: URLRequestConvertible {
     }
   }
   
-  var parameters: Parameters {
+  var params: Parameters {
     switch self {
     case .getHistoryTrend(let itemUrl):
       return [
@@ -86,18 +88,5 @@ extension MmbRouter: URLRequestConvertible {
     case .getHistoryTrend:
       return .post
     }
-  }
-  
-  func asURLRequest() throws -> URLRequest {
-    let urlString = MmbRouter.baseURL + self.path
-    guard let url = try? urlString.asURL() else {
-      throw LFError.invalidURL(url: urlString)
-    }
-    var req = URLRequest(url: url)
-    req.allHTTPHeaderFields = headers
-    req.httpMethod = self.method.rawValue
-    req.timeoutInterval = TimeInterval(5)
-    req.httpBody = parameters.percentEncoded()
-    return req
   }
 }

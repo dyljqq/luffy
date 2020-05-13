@@ -8,12 +8,6 @@
 
 import Foundation
 
-public enum LFError: Error {
-  
-  case invalidURL(url: URLConvertible)
-  
-}
-
 public protocol URLConvertible {
   
   func asURL() throws -> URL

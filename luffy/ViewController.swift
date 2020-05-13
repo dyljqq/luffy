@@ -15,22 +15,25 @@ class ViewController: UIViewController {
     
     view.backgroundColor = .red
     
-    let url = "https://detail.taobao.com/item.htm?id=594359473626"
-    ManManBuy.shared.getHistoryTrend(url: url) { result in
-      let decoder = JSONDecoder()
-      guard let single = result["single"] as? [String: Any],
-        let data = try? JSONSerialization.data(withJSONObject: single, options: []) else {
-          print("parse error...")
-        return
-      }
-      
-      do {
-        let info = try decoder.decode(MmbHistoryitemInfo.self, from: data)
-        print(info)
-      } catch {
-        print("\(error)")
-      }
-    }
+//    let url = "https://detail.taobao.com/item.htm?id=594359473626"
+//    ManManBuy.shared.getHistoryTrend(url: url) { result in
+//      let decoder = JSONDecoder()
+//      guard let single = result["single"] as? [String: Any],
+//        let data = try? JSONSerialization.data(withJSONObject: single, options: []) else {
+//          print("parse error...")
+//        return
+//      }
+//
+//      do {
+//        let info = try decoder.decode(MmbHistoryitemInfo.self, from: data)
+//        print(info)
+//      } catch {
+//        print("\(error)")
+//      }
+//    }
+    
+    let itemId = 585778931802
+    try? TbItemFetcher.shared.getTbItemInfo(itemId: itemId)
   }
 
 
