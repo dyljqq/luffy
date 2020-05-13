@@ -22,6 +22,9 @@
 		7320E79B245886A700E5B2A3 /* URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7320E79A245886A700E5B2A3 /* URLEncoding.swift */; };
 		7320E79D24588BCA00E5B2A3 /* NSNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7320E79C24588BCA00E5B2A3 /* NSNumber+Extension.swift */; };
 		7320E7C12458915C00E5B2A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7320E7C02458915C00E5B2A3 /* SceneDelegate.swift */; };
+		73C9E94C246A412600C6DFA7 /* TbRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C9E94B246A412600C6DFA7 /* TbRouter.swift */; };
+		73C9E94E246A4B0200C6DFA7 /* TbItemFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C9E94D246A4B0200C6DFA7 /* TbItemFetcher.swift */; };
+		73C9E951246A4BC700C6DFA7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C9E950246A4BC700C6DFA7 /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		7320E79A245886A700E5B2A3 /* URLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoding.swift; sourceTree = "<group>"; };
 		7320E79C24588BCA00E5B2A3 /* NSNumber+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+Extension.swift"; sourceTree = "<group>"; };
 		7320E7C02458915C00E5B2A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		73C9E94B246A412600C6DFA7 /* TbRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbRouter.swift; sourceTree = "<group>"; };
+		73C9E94D246A4B0200C6DFA7 /* TbItemFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbItemFetcher.swift; sourceTree = "<group>"; };
+		73C9E950246A4BC700C6DFA7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		7320E77824587A0E00E5B2A3 /* luffy */ = {
 			isa = PBXGroup;
 			children = (
+				73C9E94F246A4BA600C6DFA7 /* Common */,
 				7319A8B224614B0400101896 /* Model */,
 				7320E797245885F800E5B2A3 /* Network */,
 				7320E7922458800400E5B2A3 /* protocol */,
@@ -102,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				7320E78E24587D4D00E5B2A3 /* ManManBuy.swift */,
+				73C9E94D246A4B0200C6DFA7 /* TbItemFetcher.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -130,8 +138,17 @@
 			children = (
 				7320E79A245886A700E5B2A3 /* URLEncoding.swift */,
 				7319A8BE2466AD8A00101896 /* MmbRouter.swift */,
+				73C9E94B246A412600C6DFA7 /* TbRouter.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		73C9E94F246A4BA600C6DFA7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				73C9E950246A4BC700C6DFA7 /* Error.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C9E951246A4BC700C6DFA7 /* Error.swift in Sources */,
 				7319A8B624614BA600101896 /* MmbHistoryitemInfo.swift in Sources */,
 				7320E78F24587D4D00E5B2A3 /* ManManBuy.swift in Sources */,
 				7320E77E24587A0E00E5B2A3 /* ViewController.swift in Sources */,
@@ -211,9 +229,11 @@
 				7320E79D24588BCA00E5B2A3 /* NSNumber+Extension.swift in Sources */,
 				7320E79B245886A700E5B2A3 /* URLEncoding.swift in Sources */,
 				7319A8B424614B1B00101896 /* MmbItemPriceTrend.swift in Sources */,
+				73C9E94E246A4B0200C6DFA7 /* TbItemFetcher.swift in Sources */,
 				7320E77A24587A0E00E5B2A3 /* AppDelegate.swift in Sources */,
 				7319A8BD2466AD5400101896 /* URLRequestConvertible.swift in Sources */,
 				7320E796245880EA00E5B2A3 /* String+Extension.swift in Sources */,
+				73C9E94C246A412600C6DFA7 /* TbRouter.swift in Sources */,
 				7320E7942458802B00E5B2A3 /* URLConvertible.swift in Sources */,
 				7319A8C12466B16B00101896 /* Dict+Extension.swift in Sources */,
 				7320E7C12458915C00E5B2A3 /* SceneDelegate.swift in Sources */,
