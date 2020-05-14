@@ -12,9 +12,9 @@ struct TbItemFetcher {
   
   static let shared: TbItemFetcher = TbItemFetcher()
   
-  func getTbItemInfo(itemId: Int) throws {
+  func getTbItemInfo(itemId: Int, callback: @escaping ([String: Any]) -> ()) {
     guard let req = try? TbRouter.itemInfo(itemId).asURLRequest() else {
-      throw LFError.invalidURLRequest
+      return
     }
     let task = URLSession.shared.dataTask(with: req) { data, response, error in
       guard let data = data else {
@@ -24,7 +24,7 @@ struct TbItemFetcher {
         return
       }
       if let r = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-        print("result: \(r)")
+        callback(r)
       }
     }
     task.resume()
