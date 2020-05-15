@@ -33,18 +33,8 @@ class ViewController: UIViewController {
 //    }
     
     let itemId = 585778931802
-    TbItemFetcher.shared.getTbItemInfo(itemId: itemId) { d in
-      let decoder = JSONDecoder()
-      guard let d = d["data"] as? [String: Any],
-        let data = try? JSONSerialization.data(withJSONObject: d, options: []) else {
-        return
-      }
-      do {
-        let info = try decoder.decode(TbItemInfo.self, from: data)
-        print(info)
-      } catch {
-        print(error)
-      }
+    TbItemFetcher.shared.getTbItemInfo(itemId: itemId) { (item: TbOriginItem?) in
+      print(item?.data)
     }
   }
 
