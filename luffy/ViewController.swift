@@ -33,7 +33,9 @@ class ViewController: UIViewController {
 //    }
     
     let itemId = 585778931802
-    try? TbItemFetcher.shared.getTbItemInfo(itemId: itemId)
+    TbItemFetcher.shared.getTbItemInfo(itemId: itemId) { (item: TbOriginItem?) in
+      print(item?.data)
+    }
   }
 
 

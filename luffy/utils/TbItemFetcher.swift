@@ -12,22 +12,15 @@ struct TbItemFetcher {
   
   static let shared: TbItemFetcher = TbItemFetcher()
   
-  func getTbItemInfo(itemId: Int) throws {
-    guard let req = try? TbRouter.itemInfo(itemId).asURLRequest() else {
-      throw LFError.invalidURLRequest
-    }
-    let task = URLSession.shared.dataTask(with: req) { data, response, error in
-      guard let data = data else {
-        if let error = error {
-          print("network error: \(error)")
-        }
-        return
-      }
-      if let r = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
-        print("result: \(r)")
+  func getTbItemInfo<T: Codable>(itemId: Int, callback: @escaping (T?) -> ()) {
+    LFNetwork.shared.request(TbRouter.itemInfo(itemId)) { (result: Result<T>) in
+      switch result {
+      case .success(let value):
+        callback(value)
+      case .failure(let error):
+        print("error: \(error)")
       }
     }
-    task.resume()
   }
   
 }
