@@ -9,35 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  lazy var searchBar: LFSearchBar = {
+    let searchBar = LFSearchBar()
+    return searchBar
+  }()
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .red
+    view.backgroundColor = Color.backgroundColor
     
 //    let url = "https://detail.taobao.com/item.htm?id=594359473626"
-//    ManManBuy.shared.getHistoryTrend(url: url) { result in
-//      let decoder = JSONDecoder()
-//      guard let single = result["single"] as? [String: Any],
-//        let data = try? JSONSerialization.data(withJSONObject: single, options: []) else {
-//          print("parse error...")
-//        return
-//      }
-//
-//      do {
-//        let info = try decoder.decode(MmbHistoryitemInfo.self, from: data)
-//        print(info)
-//      } catch {
-//        print("\(error)")
-//      }
-//    }
+    let url = "https://detail.tmall.com/item.htm?id=585556218795&skuId=4184583576582"
     
-    let itemId = 585778931802
+    let itemId = 585556218795
     TbItemFetcher.shared.getTbItemInfo(itemId: itemId) { (item: TbOriginItem?) in
       print(item?.data)
     }
+    
+    self.navigationItem.titleView = searchBar
+    self.navigationItem.titleView?.snp.makeConstraints { make in
+      make.leading.equalTo(16)
+      make.trailing.equalTo(-16)
+      make.top.equalTo(5)
+      make.bottom.equalTo(-5)
+    }
   }
 
-
+  func setup() {
+    
+  }
+  
 }
 
