@@ -32,12 +32,20 @@
 		738BAFB6246D1F4D0064D53C /* ResponseSerializeationswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738BAFB5246D1F4D0064D53C /* ResponseSerializeationswift.swift */; };
 		738BAFB8246D268C0064D53C /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738BAFB7246D268C0064D53C /* TaskDelegate.swift */; };
 		73C0C56D246EA6EC00AB407F /* TbOriginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C56C246EA6EC00AB407F /* TbOriginItem.swift */; };
+		73C0C56F246FDA5B00AB407F /* MmbOriginMmbHistoryitemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C56E246FDA5B00AB407F /* MmbOriginMmbHistoryitemInfo.swift */; };
+		73C0C574246FDC3C00AB407F /* TaobaoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C573246FDC3C00AB407F /* TaobaoItemViewController.swift */; };
+		73C0C577246FE0F800AB407F /* LFSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C576246FE0F800AB407F /* LFSearchBar.swift */; };
+		73C0C57A246FE44E00AB407F /* BaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C579246FE44E00AB407F /* BaseInfo.swift */; };
+		73C0C57C246FE49000AB407F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C57B246FE49000AB407F /* Color.swift */; };
 		73C9E94C246A412600C6DFA7 /* TbRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C9E94B246A412600C6DFA7 /* TbRouter.swift */; };
 		73C9E94E246A4B0200C6DFA7 /* TbItemFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C9E94D246A4B0200C6DFA7 /* TbItemFetcher.swift */; };
 		73C9E951246A4BC700C6DFA7 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C9E950246A4BC700C6DFA7 /* Error.swift */; };
+		BB1889C7E6E0BA18E382D54A /* Pods_luffy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70305AD86835C20B410C22CE /* Pods_luffy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5484256BDE98480BA535F978 /* Pods-luffy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luffy.release.xcconfig"; path = "Target Support Files/Pods-luffy/Pods-luffy.release.xcconfig"; sourceTree = "<group>"; };
+		70305AD86835C20B410C22CE /* Pods_luffy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_luffy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7319A8B324614B1B00101896 /* MmbItemPriceTrend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MmbItemPriceTrend.swift; sourceTree = "<group>"; };
 		7319A8B524614BA600101896 /* MmbHistoryitemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MmbHistoryitemInfo.swift; sourceTree = "<group>"; };
 		7319A8BC2466AD5400101896 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
@@ -65,9 +73,15 @@
 		738BAFB5246D1F4D0064D53C /* ResponseSerializeationswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerializeationswift.swift; sourceTree = "<group>"; };
 		738BAFB7246D268C0064D53C /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
 		73C0C56C246EA6EC00AB407F /* TbOriginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbOriginItem.swift; sourceTree = "<group>"; };
+		73C0C56E246FDA5B00AB407F /* MmbOriginMmbHistoryitemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MmbOriginMmbHistoryitemInfo.swift; sourceTree = "<group>"; };
+		73C0C573246FDC3C00AB407F /* TaobaoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaobaoItemViewController.swift; sourceTree = "<group>"; };
+		73C0C576246FE0F800AB407F /* LFSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSearchBar.swift; sourceTree = "<group>"; };
+		73C0C579246FE44E00AB407F /* BaseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfo.swift; sourceTree = "<group>"; };
+		73C0C57B246FE49000AB407F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		73C9E94B246A412600C6DFA7 /* TbRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbRouter.swift; sourceTree = "<group>"; };
 		73C9E94D246A4B0200C6DFA7 /* TbItemFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TbItemFetcher.swift; sourceTree = "<group>"; };
 		73C9E950246A4BC700C6DFA7 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		B1E0899E12E99632FD92A8A7 /* Pods-luffy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-luffy.debug.xcconfig"; path = "Target Support Files/Pods-luffy/Pods-luffy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1889C7E6E0BA18E382D54A /* Pods_luffy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +110,8 @@
 			children = (
 				7320E77824587A0E00E5B2A3 /* luffy */,
 				7320E77724587A0E00E5B2A3 /* Products */,
+				7C8137452335FA4C3E3B917B /* Pods */,
+				855B17D55992626A4A621928 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +126,9 @@
 		7320E77824587A0E00E5B2A3 /* luffy */ = {
 			isa = PBXGroup;
 			children = (
+				73C0C578246FE42D00AB407F /* Consts */,
+				73C0C575246FDF1400AB407F /* View */,
+				73C0C570246FDA9900AB407F /* Controller */,
 				73C9E94F246A4BA600C6DFA7 /* Common */,
 				7319A8B224614B0400101896 /* Model */,
 				7320E797245885F800E5B2A3 /* Network */,
@@ -185,8 +205,34 @@
 			children = (
 				7319A8B324614B1B00101896 /* MmbItemPriceTrend.swift */,
 				7319A8B524614BA600101896 /* MmbHistoryitemInfo.swift */,
+				73C0C56E246FDA5B00AB407F /* MmbOriginMmbHistoryitemInfo.swift */,
 			);
 			path = Mmb;
+			sourceTree = "<group>";
+		};
+		73C0C570246FDA9900AB407F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73C0C573246FDC3C00AB407F /* TaobaoItemViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		73C0C575246FDF1400AB407F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73C0C576246FE0F800AB407F /* LFSearchBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73C0C578246FE42D00AB407F /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				73C0C579246FE44E00AB407F /* BaseInfo.swift */,
+				73C0C57B246FE49000AB407F /* Color.swift */,
+			);
+			path = Consts;
 			sourceTree = "<group>";
 		};
 		73C9E94F246A4BA600C6DFA7 /* Common */ = {
@@ -197,6 +243,24 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		7C8137452335FA4C3E3B917B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1E0899E12E99632FD92A8A7 /* Pods-luffy.debug.xcconfig */,
+				5484256BDE98480BA535F978 /* Pods-luffy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		855B17D55992626A4A621928 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70305AD86835C20B410C22CE /* Pods_luffy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7320E78A24587A1300E5B2A3 /* Build configuration list for PBXNativeTarget "luffy" */;
 			buildPhases = (
+				09E27344ADB13B21EF5BE5CD /* [CP] Check Pods Manifest.lock */,
 				7320E77224587A0E00E5B2A3 /* Sources */,
 				7320E77324587A0E00E5B2A3 /* Frameworks */,
 				7320E77424587A0E00E5B2A3 /* Resources */,
+				F0791FC026705F198C37D993 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +328,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09E27344ADB13B21EF5BE5CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-luffy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0791FC026705F198C37D993 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-luffy/Pods-luffy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-luffy/Pods-luffy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-luffy/Pods-luffy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7320E77224587A0E00E5B2A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -271,7 +379,10 @@
 				738BAFB6246D1F4D0064D53C /* ResponseSerializeationswift.swift in Sources */,
 				73C9E951246A4BC700C6DFA7 /* Error.swift in Sources */,
 				7319A8B624614BA600101896 /* MmbHistoryitemInfo.swift in Sources */,
+				73C0C57A246FE44E00AB407F /* BaseInfo.swift in Sources */,
+				73C0C577246FE0F800AB407F /* LFSearchBar.swift in Sources */,
 				73C0C56D246EA6EC00AB407F /* TbOriginItem.swift in Sources */,
+				73C0C574246FDC3C00AB407F /* TaobaoItemViewController.swift in Sources */,
 				7320E78F24587D4D00E5B2A3 /* ManManBuy.swift in Sources */,
 				738BAFB8246D268C0064D53C /* TaskDelegate.swift in Sources */,
 				7320E77E24587A0E00E5B2A3 /* ViewController.swift in Sources */,
@@ -283,6 +394,7 @@
 				7320E77A24587A0E00E5B2A3 /* AppDelegate.swift in Sources */,
 				738BAFAD246D147B0064D53C /* LFNetwork.swift in Sources */,
 				7319A8BD2466AD5400101896 /* URLRequestConvertible.swift in Sources */,
+				73C0C57C246FE49000AB407F /* Color.swift in Sources */,
 				738BAFB4246D1C1D0064D53C /* Result.swift in Sources */,
 				7320E796245880EA00E5B2A3 /* String+Extension.swift in Sources */,
 				738BAFB2246D1B220064D53C /* DataResponse.swift in Sources */,
@@ -292,6 +404,7 @@
 				738BAFA6246BD0FD0064D53C /* TbItem.swift in Sources */,
 				738BAFA8246BD13A0064D53C /* TbSeller.swift in Sources */,
 				738BAFAA246BD4550064D53C /* TbItemInfo.swift in Sources */,
+				73C0C56F246FDA5B00AB407F /* MmbOriginMmbHistoryitemInfo.swift in Sources */,
 				7320E7C12458915C00E5B2A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +539,7 @@
 		};
 		7320E78B24587A1300E5B2A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E0899E12E99632FD92A8A7 /* Pods-luffy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +559,7 @@
 		};
 		7320E78C24587A1300E5B2A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5484256BDE98480BA535F978 /* Pods-luffy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
